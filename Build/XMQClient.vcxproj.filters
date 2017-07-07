@@ -1,0 +1,855 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\gloox">
+      <UniqueIdentifier>{bc03cd8a-396e-4ec7-aea0-c11caaf88fcb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xmqclient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\adhoc.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\amp.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\annotations.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\atomicrefcount.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\attention.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\base64.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\bookmarkstorage.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\capabilities.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\carbons.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\chatstate.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\chatstatefilter.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\client.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\clientbase.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\component.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\compressiondefault.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\compressionzlib.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectionbosh.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectionhttpproxy.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectionsocks5proxy.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectiontcpbase.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectiontcpclient.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectiontcpserver.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectiontls.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectiontlsserver.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\dataform.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\dataformfield.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\dataformfieldcontainer.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\dataformitem.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\dataformreported.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\delayeddelivery.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\disco.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\dns.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\error.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\eventdispatcher.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\featureneg.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\flexoff.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\forward.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\gloox.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\gpgencrypted.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\gpgsigned.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\inbandbytestream.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\instantmucroom.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\iodata.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\iq.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\jid.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\jinglecontent.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\jinglefiletransfer.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\jingleiceudp.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\jinglepluginfactory.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\jinglesession.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\jinglesessionmanager.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\lastactivity.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\linklocalclient.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\linklocalmanager.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\logsink.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\md5.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\message.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\messageevent.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\messageeventfilter.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\messagefilter.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\messagesession.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\mucinvitationhandler.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\mucmessagesession.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\mucroom.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\mutex.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\nickname.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\nonsaslauth.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\oob.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\parser.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\prep.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\presence.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\privacyitem.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\privacymanager.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\privatexml.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\pubsubevent.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\pubsubitem.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\pubsubmanager.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\receipt.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\registration.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\rosteritem.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\rostermanager.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\search.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\sha.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\shim.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\simanager.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\siprofileft.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\socks5bytestream.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\socks5bytestreammanager.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\socks5bytestreamserver.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\softwareversion.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\stanza.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\stanzaextensionfactory.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\subscription.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tag.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsdefault.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsbase.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsclient.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsclientanon.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsserveranon.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsopensslbase.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsopensslclient.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsopensslserver.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsschannel.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\uniquemucroom.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\util.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\vcard.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\vcardmanager.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\vcardupdate.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\xhtmlim.cpp">
+      <Filter>Source Files\gloox</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\xmqclient.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\adhoc.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\adhoccommandprovider.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\adhochandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\adhocplugin.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\amp.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\annotations.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\annotationshandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\atomicrefcount.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\attention.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\base64.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\bookmarkhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\bookmarkstorage.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\bytestream.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\bytestreamdatahandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\bytestreamhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\capabilities.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\carbons.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\chatstate.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\chatstatefilter.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\chatstatehandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\client.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\clientbase.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\component.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\compressionbase.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\compressiondatahandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\compressiondefault.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\compressionzlib.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\config.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectionbase.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectionbosh.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectiondatahandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectionhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectionhttpproxy.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectionlistener.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectionsocks5proxy.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectiontcpbase.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectiontcpclient.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectiontcpserver.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectiontls.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectiontlsserver.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\dataform.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\dataformfield.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\dataformfieldcontainer.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\dataformitem.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\dataformreported.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\delayeddelivery.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\disco.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\discohandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\disconodehandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\dns.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\error.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\event.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\eventdispatcher.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\eventhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\featureneg.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\flexoff.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\flexoffhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\forward.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\gloox.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\glooxversion.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\gpgencrypted.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\gpgsigned.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\inbandbytestream.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\instantmucroom.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\iodata.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\iq.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\iqhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jid.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jinglecontent.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jinglefiletransfer.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jingleiceudp.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jingleplugin.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jinglepluginfactory.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jinglesession.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jinglesessionhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jinglesessionmanager.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\lastactivity.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\lastactivityhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\linklocal.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\linklocalclient.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\linklocalhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\linklocalmanager.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\loghandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\logsink.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\macros.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\md5.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\message.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\messageevent.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\messageeventfilter.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\messageeventhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\messagefilter.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\messagehandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\messagesession.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\messagesessionhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\mucinvitationhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\mucmessagesession.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\mucroom.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\mucroomconfighandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\mucroomhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\mutex.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\mutexguard.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\nickname.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\nonsaslauth.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\oob.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\parser.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\prep.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\presence.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\presencehandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\privacyitem.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\privacylisthandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\privacymanager.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\privatexml.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\privatexmlhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\pubsub.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\pubsubevent.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\pubsubitem.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\pubsubmanager.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\pubsubresulthandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\receipt.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\registration.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\registrationhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\resource.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\rosteritem.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\rosteritemdata.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\rosterlistener.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\rostermanager.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\search.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\searchhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\sha.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\shim.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\sihandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\simanager.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\siprofileft.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\siprofilefthandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\siprofilehandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\socks5bytestream.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\socks5bytestreammanager.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\socks5bytestreamserver.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\softwareversion.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\stanza.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\stanzaextension.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\stanzaextensionfactory.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\statisticshandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\subscription.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\subscriptionhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tag.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\taghandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsbase.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsdefault.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsbase.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsclient.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsclientanon.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsserveranon.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlshandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsopensslbase.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsopensslclient.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsopensslserver.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsschannel.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\uniquemucroom.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\util.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\vcard.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\vcardhandler.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\vcardmanager.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\vcardupdate.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\xhtmlim.h">
+      <Filter>Source Files\gloox</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

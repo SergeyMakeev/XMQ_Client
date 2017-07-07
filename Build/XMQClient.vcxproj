@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{14C2AD45-C5E7-4ADD-9A25-F5BFA647BBDD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>XMQClient</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\ThirdParty\gloox-1.0.20\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\ThirdParty\gloox-1.0.20\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\adhoc.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\amp.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\annotations.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\atomicrefcount.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\attention.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\base64.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\bookmarkstorage.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\capabilities.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\carbons.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\chatstate.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\chatstatefilter.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\client.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\clientbase.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\component.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\compressiondefault.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\compressionzlib.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectionbosh.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectionhttpproxy.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectionsocks5proxy.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectiontcpbase.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectiontcpclient.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectiontcpserver.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectiontls.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\connectiontlsserver.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\dataform.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\dataformfield.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\dataformfieldcontainer.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\dataformitem.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\dataformreported.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\delayeddelivery.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\disco.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\dns.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\error.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\eventdispatcher.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\featureneg.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\flexoff.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\forward.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\gloox.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\gpgencrypted.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\gpgsigned.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\inbandbytestream.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\instantmucroom.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\iodata.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\iq.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\jid.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\jinglecontent.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\jinglefiletransfer.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\jingleiceudp.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\jinglepluginfactory.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\jinglesession.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\jinglesessionmanager.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\lastactivity.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\linklocalclient.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\linklocalmanager.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\logsink.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\md5.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\message.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\messageevent.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\messageeventfilter.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\messagefilter.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\messagesession.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\mucinvitationhandler.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\mucmessagesession.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\mucroom.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\mutex.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\nickname.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\nonsaslauth.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\oob.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\parser.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\prep.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\presence.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\privacyitem.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\privacymanager.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\privatexml.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\pubsubevent.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\pubsubitem.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\pubsubmanager.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\receipt.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\registration.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\rosteritem.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\rostermanager.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\search.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\sha.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\shim.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\simanager.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\siprofileft.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\socks5bytestream.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\socks5bytestreammanager.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\socks5bytestreamserver.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\softwareversion.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\stanza.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\stanzaextensionfactory.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\subscription.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tag.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsdefault.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsbase.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsclient.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsclientanon.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsserveranon.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsopensslbase.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsopensslclient.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsopensslserver.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\tlsschannel.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\uniquemucroom.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\util.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\vcard.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\vcardmanager.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\vcardupdate.cpp" />
+    <ClCompile Include="..\ThirdParty\gloox-1.0.20\src\xhtmlim.cpp" />
+    <ClCompile Include="..\xmqclient.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\adhoc.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\adhoccommandprovider.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\adhochandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\adhocplugin.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\amp.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\annotations.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\annotationshandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\atomicrefcount.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\attention.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\base64.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\bookmarkhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\bookmarkstorage.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\bytestream.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\bytestreamdatahandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\bytestreamhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\capabilities.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\carbons.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\chatstate.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\chatstatefilter.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\chatstatehandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\client.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\clientbase.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\component.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\compressionbase.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\compressiondatahandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\compressiondefault.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\compressionzlib.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\config.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectionbase.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectionbosh.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectiondatahandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectionhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectionhttpproxy.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectionlistener.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectionsocks5proxy.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectiontcpbase.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectiontcpclient.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectiontcpserver.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectiontls.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\connectiontlsserver.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\dataform.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\dataformfield.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\dataformfieldcontainer.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\dataformitem.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\dataformreported.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\delayeddelivery.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\disco.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\discohandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\disconodehandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\dns.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\error.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\event.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\eventdispatcher.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\eventhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\featureneg.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\flexoff.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\flexoffhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\forward.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\gloox.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\glooxversion.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\gpgencrypted.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\gpgsigned.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\inbandbytestream.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\instantmucroom.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\iodata.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\iq.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\iqhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jid.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jinglecontent.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jinglefiletransfer.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jingleiceudp.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jingleplugin.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jinglepluginfactory.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jinglesession.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jinglesessionhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\jinglesessionmanager.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\lastactivity.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\lastactivityhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\linklocal.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\linklocalclient.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\linklocalhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\linklocalmanager.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\loghandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\logsink.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\macros.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\md5.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\message.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\messageevent.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\messageeventfilter.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\messageeventhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\messagefilter.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\messagehandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\messagesession.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\messagesessionhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\mucinvitationhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\mucmessagesession.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\mucroom.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\mucroomconfighandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\mucroomhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\mutex.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\mutexguard.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\nickname.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\nonsaslauth.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\oob.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\parser.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\prep.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\presence.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\presencehandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\privacyitem.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\privacylisthandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\privacymanager.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\privatexml.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\privatexmlhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\pubsub.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\pubsubevent.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\pubsubitem.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\pubsubmanager.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\pubsubresulthandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\receipt.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\registration.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\registrationhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\resource.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\rosteritem.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\rosteritemdata.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\rosterlistener.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\rostermanager.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\search.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\searchhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\sha.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\shim.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\sihandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\simanager.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\siprofileft.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\siprofilefthandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\siprofilehandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\socks5bytestream.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\socks5bytestreammanager.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\socks5bytestreamserver.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\softwareversion.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\stanza.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\stanzaextension.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\stanzaextensionfactory.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\statisticshandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\subscription.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\subscriptionhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tag.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\taghandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsbase.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsdefault.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsbase.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsclient.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsclientanon.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsgnutlsserveranon.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlshandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsopensslbase.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsopensslclient.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsopensslserver.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\tlsschannel.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\uniquemucroom.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\util.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\vcard.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\vcardhandler.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\vcardmanager.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\vcardupdate.h" />
+    <ClInclude Include="..\ThirdParty\gloox-1.0.20\src\xhtmlim.h" />
+    <ClInclude Include="..\xmqclient.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
