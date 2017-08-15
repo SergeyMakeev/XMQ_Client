@@ -1,0 +1,7 @@
+Build/x64
+Build/Debug
+Build/Release
+*.suo
+*.sdf
+*.user
+*.opendb

@@ -19,7 +19,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 class CustomStanza : public gloox::StanzaExtension
 {
-	std::string body;
+	std::string payload;
 
 public:
 
@@ -29,19 +29,19 @@ public:
 		if (tag != nullptr)
 		{
 			assert(tag->name() == "custom_stanza");
-			body = tag->cdata();
+			payload = tag->cdata();
 		}
 	}
 
-	CustomStanza(const char* _body)
+	CustomStanza(const char* _payload)
 		: gloox::StanzaExtension(CustomStanzaId)
 	{
-		body = _body;
+		payload = _payload;
 	}
 
-	const std::string& getBody() const
+	const std::string& getPayload() const
 	{
-		return body;
+		return payload;
 	}
 
 	virtual const std::string& filterString() const
@@ -59,14 +59,14 @@ public:
 	{
 		gloox::Tag* t = new gloox::Tag("custom_stanza");
 		t->setXmlns(CustomStanzaXmlNS);
-		t->addCData(body.c_str());
+		t->addCData(payload.c_str());
 		return t;
 	}
 
 	virtual StanzaExtension* clone() const
 	{
 		CustomStanza* q = new CustomStanza();
-		q->body = body;
+		q->payload = payload;
 		return q;
 	}
 };
@@ -340,11 +340,11 @@ bool XMQClient::handleIq(const gloox::IQ& iq)
 		const CustomStanza* q = iq.findExtension<CustomStanza>(CustomStanzaId);
 		if (q)
 		{
-			const std::string& body = q->getBody();
+			const std::string& payload = q->getPayload();
 			WriteLine("Custom stanza received", ConsoleColor::Black, ConsoleColor::BrightGreen);
 			WriteLine(iq.from().full().c_str(), ConsoleColor::Black, ConsoleColor::BrightWhite);
 			WriteLine(iq.to().full().c_str(), ConsoleColor::Black, ConsoleColor::BrightWhite);
-			WriteLine(body.c_str(), ConsoleColor::Black, ConsoleColor::BrightWhite);
+			WriteLine(payload.c_str(), ConsoleColor::Black, ConsoleColor::BrightWhite);
 		}
 	}
 
@@ -408,7 +408,7 @@ void XMQClient::SendMessageToQueue(const char* queue, const char* topic, const c
 }
 
 
-void XMQClient::SendCustomStanzaToQueue(const char* queue, const char* topic, const char* customQueryData)
+void XMQClient::SendCustomStanzaToQueue(const char* queue, const char* topic, const char* payload)
 {
 	std::string queueAddr;
 	queueAddr = queue;
@@ -417,7 +417,7 @@ void XMQClient::SendCustomStanzaToQueue(const char* queue, const char* topic, co
 	gloox::JID queueJID(queueAddr);
 
 	gloox::IQ iq(gloox::IQ::Get, queueJID, genID());
-	iq.addExtension(new CustomStanza(customQueryData));
+	iq.addExtension(new CustomStanza(payload));
 	iq.addExtension(new XmqTopic(topic));
 	client->send(iq);
 }

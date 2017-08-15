@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 	std::unique_ptr<XMQClient> client(new XMQClient());
 
-	if (!client->Connect(user, domain, resource, password, 5224))
+	if (!client->Connect(user, domain, resource, password, 5222))
 	{
 		XMQClient::WriteLine("Can't connect to XMPP server", ConsoleColor::Black, ConsoleColor::BrightRed);
 		return -1;

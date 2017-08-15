@@ -77,7 +77,7 @@ public:
 
 	void Subscribe(const char* queue, const char* topic, int ttl, int load = 0);
 	void SendMessageToQueue(const char* queue, const char* topic, const char* message, const char* subject, const char* thread);
-	void SendCustomStanzaToQueue(const char* queue, const char* topic, const char* customQueryData);
+	void SendCustomStanzaToQueue(const char* queue, const char* topic, const char* payload);
 
 
 	static void WriteLine(const char* message, ConsoleColor::Type background, ConsoleColor::Type foreground);
